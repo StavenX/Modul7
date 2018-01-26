@@ -1,3 +1,5 @@
+package net;
+
 /**
  * Read web server data and analyse hourly access patterns.
  * 
