@@ -77,6 +77,7 @@ public class LogfileReader implements Iterator<LogEntry>
         // If we couldn't read the log file, use simulated data.
         if(!dataRead) {
             System.out.println("Failed to read the data file: " + filename);
+            System.out.println("");
             System.out.println("Using simulated data instead.");
             createSimulatedData(entries);
         }
