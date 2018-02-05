@@ -9,6 +9,10 @@ public class Start
 		
 		analyzer.analyzeHourlyData();
 		analyzer.printHourlyCounts();
+		
+		// My methods in LogAnalyzer
+		analyzer.busiestHour();
+		analyzer.quietestHour();
 	}
 
 }

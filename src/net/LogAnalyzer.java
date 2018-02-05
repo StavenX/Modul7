@@ -57,4 +57,56 @@ public class LogAnalyzer
     {
         reader.printData();
     }
+    
+    /**
+     * Prints the busiest hour in the entry
+     * @author Staven
+     */
+    public void busiestHour() 
+    {
+    	int hour = 0;
+    	int highestEntry = 0;
+    	
+    	for (int i = 0; i < hourCounts.length; i++)
+    	{
+    		if (hourCounts[i] > highestEntry)
+    		{
+    			highestEntry = hourCounts[i];
+    			hour = i;
+    		}
+    	}
+    	
+    	System.out.println(
+    		String.format("Hour %d was the busiest hour with %d entries.",
+    			hour,
+    			highestEntry
+    		)		
+    	);
+    }
+ 
+    /**
+     * Prints the least busiest hour in the entry
+     * @author Staven
+     */
+    public void quietestHour()
+    {
+    	int hour = 0;
+    	int lowestEntry = Integer.MAX_VALUE;
+    	
+    	for (int i = 0; i < hourCounts.length; i++)
+    	{
+    		if (hourCounts[i] < lowestEntry)
+    		{
+    			lowestEntry = hourCounts[i];
+    			hour = i;
+    		}
+    	}
+    	
+    	System.out.println(
+    		String.format("Hour %d was the quietest hour with %d entries.",
+    			hour,
+    			lowestEntry
+    		)
+    	);
+    }    
 }
