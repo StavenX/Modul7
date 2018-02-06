@@ -75,13 +75,14 @@ public class LogAnalyzer
     			hour = i;
     		}
     	}
-    	
+    	System.out.println("---------------------------------------------");
     	System.out.println(
     		String.format("Hour %d was the busiest hour with %d entries.",
     			hour,
     			highestEntry
     		)		
     	);
+    	System.out.println("---------------------------------------------");
     }
  
     /**
@@ -101,12 +102,13 @@ public class LogAnalyzer
     			hour = i;
     		}
     	}
-    	
+    	System.out.println("---------------------------------------------");
     	System.out.println(
     		String.format("Hour %d was the quietest hour with %d entries.",
     			hour,
     			lowestEntry
     		)
     	);
+    	System.out.println("---------------------------------------------");
     }    
 }
